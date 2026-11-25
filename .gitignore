@@ -1,0 +1,6 @@
+bin/
+*.exe
+*.o
+.vscode/
+__pycache__/
+.DS_Store
