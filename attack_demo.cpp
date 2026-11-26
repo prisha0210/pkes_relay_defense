@@ -1,8 +1,4 @@
-// attack_demo.cpp - Runs six attack scenarios against a conventional (legacy)
-// PKES car and against the proposed secure car, and prints the results.
-//
-// Build:  g++ -std=c++17 -O2 -Iinclude src/attack_demo.cpp -o attack_demo
-// Run:    ./attack_demo        (Windows: attack_demo.exe)
+
 
 #include <cstdio>
 #include <string>
