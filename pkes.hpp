@@ -1,18 +1,4 @@
-// pkes.hpp - Model of a Passive Keyless Entry and Start (PKES) system.
-//
-//   KeyFob      the car key (or phone key)
-//   RadioPath   radio path between car and key: direct, or through relay devices
-//   LegacyCar   conventional PKES: "if I hear a correct reply, unlock"
-//   SecureCar   proposed design: correct reply AND UWB distance <= 2 m
-//
-// Proposed design (from the article):
-//   Layer 1  UWB time-of-flight distance bounding (median of 5 ranging rounds)
-//   Layer 2  AES-128 challenge-response with fresh random nonces
-//   Layer 3  Motion-aware key fob (radio sleeps after 60 s without movement)
-//   Layer 4  Optional PIN-to-drive
-//   Monitor  Gateway ECU logs "valid but too far" replies and raises an alert
-//
-// Educational simulation - not production automotive code.
+
 #pragma once
 
 #include <algorithm>
